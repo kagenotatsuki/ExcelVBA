@@ -1,0 +1,49 @@
+      #　　設定年
+      set_year <- c(1:1)
+      for(k in set_year){
+        set_year[k] <- as.integer(substr(syussobetsutyakudosu_rec[j,98], (k - 1)*4 + (   1), (k - 1)*4 + 4 + (   1) - 1))
+      }
+      umanushi_info_list$set_year <- set_year
+      #　　本賞金合計
+      prize_total <- c(1:1)
+      for(k in prize_total){
+        prize_total[k] <- as.integer(substr(syussobetsutyakudosu_rec[j,98], (k - 1)*10 + (   5), (k - 1)*10 + 10 + (   5) - 1))
+      }
+      umanushi_info_list$prize_total <- prize_total
+      #　　付加賞金合計
+      add_prize_total <- c(1:1)
+      for(k in add_prize_total){
+        add_prize_total[k] <- as.integer(substr(syussobetsutyakudosu_rec[j,98], (k - 1)*10 + (  15), (k - 1)*10 + 10 + (  15) - 1))
+      }
+      umanushi_info_list$add_prize_total <- add_prize_total
+      #　　着回数
+      goal_count <- c(1:6)
+      for(k in goal_count){
+        goal_count[k] <- as.integer(substr(syussobetsutyakudosu_rec[j,98], (k - 1)*6 + (  25), (k - 1)*6 + 6 + (  25) - 1))
+      }
+      umanushi_info_list$goal_count <- goal_count
+      #　　設定年
+      set_year <- c(1:1)
+      for(k in set_year){
+        set_year[k] <- as.integer(substr(syussobetsutyakudosu_rec[j,101], (k - 1)*4 + (   1), (k - 1)*4 + 4 + (   1) - 1))
+      }
+      producer_info_list$set_year <- set_year
+      #　　本賞金合計
+      prize_total <- c(1:1)
+      for(k in prize_total){
+        prize_total[k] <- as.integer(substr(syussobetsutyakudosu_rec[j,101], (k - 1)*10 + (   5), (k - 1)*10 + 10 + (   5) - 1))
+      }
+      producer_info_list$prize_total <- prize_total
+      #　　付加賞金合計
+      add_prize_total <- c(1:1)
+      for(k in add_prize_total){
+        add_prize_total[k] <- as.integer(substr(syussobetsutyakudosu_rec[j,101], (k - 1)*10 + (  15), (k - 1)*10 + 10 + (  15) - 1))
+      }
+      producer_info_list$add_prize_total <- add_prize_total
+      #　　着回数
+      goal_count <- c(1:6)
+      for(k in goal_count){
+        goal_count[k] <- as.integer(substr(syussobetsutyakudosu_rec[j,101], (k - 1)*6 + (  25), (k - 1)*6 + 6 + (  25) - 1))
+      }
+      producer_info_list$goal_count <- goal_count
+

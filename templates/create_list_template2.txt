@@ -1,0 +1,6 @@
+      #xxxCOMMENTxxx
+      xxxListNamexxx <- c(1:xxxREPEATxxx)
+      for(k in xxxListNamexxx){
+        xxxListNamexxx[k] <- as.integer(substr(xxxREC_DETAFRAMExxx[j,xxxINDEXxxx], (k - 1)*xxxBYTESxxx + xxxOFFSETxxx, (k - 1)*xxxBYTESxxx + xxxBYTESxxx + xxxOFFSETxxx - 1))
+      }
+      xxxParentListNamexxx$xxxListNamexxx <- xxxListNamexxx
